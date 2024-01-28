@@ -1,0 +1,82 @@
+<html>
+<title>BANJIR MELANDA INDONESIA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<body>
+
+<div class="w3-container">
+ <img src="Banner.jpg" alt="Avatar" style="width:50%>
+
+</div>
+
+
+<div class="w3-bar w3-blue">
+ <button class="w3-bar-item w3-button" onclick="openKota('Home')">HOME</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('AboutMe')">ABOUT ME</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Kontak')">CONTACT</button>
+ <div class="w3-dropdown-hover">
+	<button class="w3-button">AREA FREQUENTLY AFFECTED BY FLOODING</button>
+	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+		<button class="w3-bar-item w3-button" onclick="openKota('Jakarta')">JAKARTA</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Bandung')">BANDUNG</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Bogor')">BOGOR</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Pandeglang')">PANDEGLANG</button>
+	</div>	
+ </div>
+</div>
+
+<div id="Home" class="w3-container kota w3-animate-zoom" style="display:none">
+ <h2>APA ITU BANJIR?</h2>
+ Banjir adalah kejadian alam di mana suatu daerah atau daratan yang biasanya kering menjadi terendam air. Secara sederhana, banjir dapat didefinisikan sebagai luapan air dalam jumlah besar ke daratan yang biasanya kering. Banjir terjadi karena banyak hal seperti hujan yang berlebihan, meluapnya aliran sungai, sungai, danau atau lautan. Banjir sangat berbahaya dan berpotensi menyapu bersih seluruh kota, garis pantai atau daerah dan menyebabkan kerusakan luas pada kehidupan dan properti. Banjir juga memiliki kekuatan erosif yang besar dan bisa sangat merusak.
+<br>
+</div>
+
+<div id="AboutMe" class="w3-container kota w3-animate-bottom" style="display:none">
+ <center>
+ <h2></h2>
+ <img src ="css/Aboutme.png">
+ </center>
+<br>
+</div>
+
+<div id="Kontak" class="w3-container kota w3-animate-zoom" style="display:none">
+ <center>
+ <h2>KONTAK KU DI</h2>
+ WHATSAPP : +621234567890
+ </center>
+<br>
+
+ </div>
+
+<div id="Jakarta" class="w3-container kota w3-animate-zoom" style="display:none">
+<h2>Banjir Di Jakarta</h2>
+Kasatpel Pengolahan Data dan Informasi BPBD DKI Jakarta Michael Sitanggang menjelaskan pohon tumbang terjadi di Jalan Melawai Raya No.197, RT1/6, Kelurahan Kramat Pela, Kecamatan Kebayoran Baru, Kota Jakarta Selatan. "Pohon tumbang sekitar Pukul 15:02 WIB dan sudah ditangani oleh 1 Unit TRC BPBD, 1 unit PPSU, 1 Unit Dishut," ujar Michael, Sabtu (6/1/2024). Michael juga menyebutkan hujan dengan intensitas sedang hingga lebat yang melanda wilayah DKI Jakarta dan sekitarnya sejak Jumat, 5 Januari 2023 kemarin hingga hari ini menyebabkan kenaikan status Pos Angke Hulu Siaga 3 (Waspada) pada Sabtu (06/01) pukul 00:00 WIB dan Siaga 2 (Siaga) pada pukul 06:00 WIB.
+
+<form name=form>
+<div id="Bandung" class="w3-container kota w3-animate-zoom" style="display:none">
+<h2>Lagi-Lagi Bandung Terendam Banjir?</h2>
+<img src="css/BanjirBandung.jpg">
+<form name=form>
+<div id="Bogor" class="w3-container kota w3-animate-zoom" style="display:none">
+<form name=form>
+<div id="Pandeglang" class="w3-container kota w3-animate-zoom" style="display:none">
+<form name=form>
+
+</div>
+</div>
+</div>
+</div>
+
+<script>
+
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
